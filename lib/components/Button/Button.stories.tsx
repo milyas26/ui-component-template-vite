@@ -12,7 +12,12 @@ const meta: Meta<typeof Button> = {
     label: { control: "text" },
     variant: {
       control: "select",
-      options: Object.values(AT_BUTTON_VARIANT),
+      // options: Object.values(AT_BUTTON_VARIANT),
+      options: [
+        AT_BUTTON_VARIANT.PRIMARY,
+        AT_BUTTON_VARIANT.SECONDARY,
+        AT_BUTTON_VARIANT.TERTIARY,
+      ],
     },
     onClick: { action: "clicked" },
   },

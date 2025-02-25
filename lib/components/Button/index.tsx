@@ -3,9 +3,9 @@ import { ButtonHTMLAttributes } from "react";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AT_BUTTON_VARIANT = {
-  PRIMARY: "primary",
-  SECONDARY: "secondary",
-  TERTIARY: "tertiary",
+  PRIMARY: "PRIMARY",
+  SECONDARY: "SECONDARY",
+  TERTIARY: "TERTIARY",
 } as const;
 export type ButtonVariant = keyof typeof AT_BUTTON_VARIANT;
 
