@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc - p ./tsconfig-build.json && vite build",
-    "lint": "eslint .",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "commit": "git-cz",
     "prepare": "husky install",
@@ -59,7 +59,8 @@
     "git-cz": "^4.9.0",
     "glob": "^11.0.1",
     "globals": "^15.14.0",
-    "husky": "^9.1.7",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
     "pinst": "^3.0.0",
     "storybook": "^8.5.8",
     "tailwindcss": "^4.0.8",
